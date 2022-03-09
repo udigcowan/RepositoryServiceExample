@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Will\\Desktop\\ToDo\\ToDo\\ToDo.csproj": {}
+    "c:\\Users\\Will\\Desktop\\ToDo\\ToDo\\ToDo.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Will\\Desktop\\ToDo\\ToDo\\ToDo.csproj": {
+    "c:\\Users\\Will\\Desktop\\ToDo\\ToDo\\ToDo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Will\\Desktop\\ToDo\\ToDo\\ToDo.csproj",
+        "projectUniqueName": "c:\\Users\\Will\\Desktop\\ToDo\\ToDo\\ToDo.csproj",
         "projectName": "ToDo",
-        "projectPath": "C:\\Users\\Will\\Desktop\\ToDo\\ToDo\\ToDo.csproj",
+        "projectPath": "c:\\Users\\Will\\Desktop\\ToDo\\ToDo\\ToDo.csproj",
         "packagesPath": "C:\\Users\\Will\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Will\\Desktop\\ToDo\\ToDo\\obj\\",
+        "outputPath": "c:\\Users\\Will\\Desktop\\ToDo\\ToDo\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Will\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -42,7 +42,11 @@
           "dependencies": {
             "HotChocolate.AspNetCore": {
               "target": "Package",
-              "version": "[12.6.2, )"
+              "version": "[13.0.0-preview.11, )"
+            },
+            "HotChocolate.Data.EntityFramework": {
+              "target": "Package",
+              "version": "[13.0.0-preview.11, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
               "target": "Package",

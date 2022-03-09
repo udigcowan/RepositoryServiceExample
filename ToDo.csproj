@@ -5,10 +5,11 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="HotChocolate.AspNetCore" Version="12.6.2" />
-    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="6.0.3" />
-    <PackageReference Include="NpgSql.EntityFrameworkCore.PostgreSQL.Design" Version="1.1.0" />
-    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.2" />
+    <PackageReference Include="HotChocolate.AspNetCore" Version="13.0.0-preview.11"/>
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="6.0.3"/>
+    <PackageReference Include="NpgSql.EntityFrameworkCore.PostgreSQL.Design" Version="1.1.0"/>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3"/>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.2"/>
+    <PackageReference Include="HotChocolate.Data.EntityFramework" Version="13.0.0-preview.11"/>
   </ItemGroup>
 </Project>

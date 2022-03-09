@@ -2,7 +2,7 @@
   "version": 3,
   "targets": {
     "net6.0": {
-      "GreenDonut/12.6.2": {
+      "GreenDonut/13.0.0-preview.11": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.ObjectPool": "3.1.4",
@@ -16,23 +16,23 @@
           "lib/net6.0/GreenDonut.dll": {}
         }
       },
-      "HotChocolate/12.6.2": {
+      "HotChocolate/13.0.0-preview.11": {
         "type": "package",
         "dependencies": {
-          "HotChocolate.Execution": "12.6.2",
-          "HotChocolate.Fetching": "12.6.2",
-          "HotChocolate.Subscriptions.InMemory": "12.6.2",
-          "HotChocolate.Types": "12.6.2",
-          "HotChocolate.Types.CursorPagination": "12.6.2",
-          "HotChocolate.Types.Mutations": "12.6.2",
-          "HotChocolate.Types.OffsetPagination": "12.6.2",
-          "HotChocolate.Validation": "12.6.2"
+          "HotChocolate.Execution": "13.0.0-preview.11",
+          "HotChocolate.Fetching": "13.0.0-preview.11",
+          "HotChocolate.Subscriptions.InMemory": "13.0.0-preview.11",
+          "HotChocolate.Types": "13.0.0-preview.11",
+          "HotChocolate.Types.CursorPagination": "13.0.0-preview.11",
+          "HotChocolate.Types.Mutations": "13.0.0-preview.11",
+          "HotChocolate.Types.OffsetPagination": "13.0.0-preview.11",
+          "HotChocolate.Validation": "13.0.0-preview.11"
         }
       },
-      "HotChocolate.Abstractions/12.6.2": {
+      "HotChocolate.Abstractions/13.0.0-preview.11": {
         "type": "package",
         "dependencies": {
-          "HotChocolate.Language": "12.6.2",
+          "HotChocolate.Language": "13.0.0-preview.11",
           "Microsoft.Bcl.AsyncInterfaces": "1.1.0",
           "System.Collections.Immutable": "1.7.0"
         },
@@ -43,11 +43,11 @@
           "lib/net6.0/HotChocolate.Abstractions.dll": {}
         }
       },
-      "HotChocolate.AspNetCore/12.6.2": {
+      "HotChocolate.AspNetCore/13.0.0-preview.11": {
         "type": "package",
         "dependencies": {
-          "HotChocolate": "12.6.2",
-          "HotChocolate.Types.Scalars.Upload": "12.6.2"
+          "HotChocolate": "13.0.0-preview.11",
+          "HotChocolate.Types.Scalars.Upload": "13.0.0-preview.11"
         },
         "compile": {
           "lib/net6.0/HotChocolate.AspNetCore.dll": {}
@@ -63,13 +63,47 @@
           "build/HotChocolate.AspNetCore.targets": {}
         }
       },
-      "HotChocolate.Execution/12.6.2": {
+      "HotChocolate.Data/13.0.0-preview.11": {
         "type": "package",
         "dependencies": {
-          "HotChocolate.Abstractions": "12.6.2",
-          "HotChocolate.Fetching": "12.6.2",
-          "HotChocolate.Types": "12.6.2",
-          "HotChocolate.Validation": "12.6.2",
+          "HotChocolate.Execution": "13.0.0-preview.11",
+          "HotChocolate.Types.CursorPagination": "13.0.0-preview.11"
+        },
+        "compile": {
+          "lib/net6.0/HotChocolate.Data.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/HotChocolate.Data.dll": {}
+        },
+        "build": {
+          "build/_._": {}
+        }
+      },
+      "HotChocolate.Data.EntityFramework/13.0.0-preview.11": {
+        "type": "package",
+        "dependencies": {
+          "HotChocolate": "13.0.0-preview.11",
+          "HotChocolate.Data": "13.0.0-preview.11",
+          "Microsoft.EntityFrameworkCore": "6.0.0"
+        },
+        "compile": {
+          "lib/net6.0/HotChocolate.Data.EntityFramework.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/HotChocolate.Data.EntityFramework.dll": {}
+        },
+        "build": {
+          "build/HotChocolate.Data.EntityFramework.props": {},
+          "build/HotChocolate.Data.EntityFramework.targets": {}
+        }
+      },
+      "HotChocolate.Execution/13.0.0-preview.11": {
+        "type": "package",
+        "dependencies": {
+          "HotChocolate.Abstractions": "13.0.0-preview.11",
+          "HotChocolate.Fetching": "13.0.0-preview.11",
+          "HotChocolate.Types": "13.0.0-preview.11",
+          "HotChocolate.Validation": "13.0.0-preview.11",
           "Microsoft.Extensions.DependencyInjection": "3.1.4",
           "Microsoft.Extensions.DiagnosticAdapter": "3.1.4",
           "System.Threading.Channels": "4.7.0"
@@ -81,11 +115,11 @@
           "lib/net6.0/HotChocolate.Execution.dll": {}
         }
       },
-      "HotChocolate.Fetching/12.6.2": {
+      "HotChocolate.Fetching/13.0.0-preview.11": {
         "type": "package",
         "dependencies": {
-          "GreenDonut": "12.6.2",
-          "HotChocolate.Types": "12.6.2"
+          "GreenDonut": "13.0.0-preview.11",
+          "HotChocolate.Types": "13.0.0-preview.11"
         },
         "compile": {
           "lib/net6.0/HotChocolate.Fetching.dll": {}
@@ -94,12 +128,12 @@
           "lib/net6.0/HotChocolate.Fetching.dll": {}
         }
       },
-      "HotChocolate.Language/12.6.2": {
+      "HotChocolate.Language/13.0.0-preview.11": {
         "type": "package",
         "dependencies": {
-          "HotChocolate.Language.SyntaxTree": "12.6.2",
-          "HotChocolate.Language.Utf8": "12.6.2",
-          "HotChocolate.Language.Visitors": "12.6.2"
+          "HotChocolate.Language.SyntaxTree": "13.0.0-preview.11",
+          "HotChocolate.Language.Utf8": "13.0.0-preview.11",
+          "HotChocolate.Language.Visitors": "13.0.0-preview.11"
         },
         "compile": {
           "lib/net6.0/HotChocolate.Language.dll": {}
@@ -108,7 +142,7 @@
           "lib/net6.0/HotChocolate.Language.dll": {}
         }
       },
-      "HotChocolate.Language.SyntaxTree/12.6.2": {
+      "HotChocolate.Language.SyntaxTree/13.0.0-preview.11": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.ObjectPool": "3.1.4"
@@ -120,10 +154,10 @@
           "lib/net6.0/HotChocolate.Language.SyntaxTree.dll": {}
         }
       },
-      "HotChocolate.Language.Utf8/12.6.2": {
+      "HotChocolate.Language.Utf8/13.0.0-preview.11": {
         "type": "package",
         "dependencies": {
-          "HotChocolate.Language.SyntaxTree": "12.6.2"
+          "HotChocolate.Language.SyntaxTree": "13.0.0-preview.11"
         },
         "compile": {
           "lib/net6.0/HotChocolate.Language.Utf8.dll": {}
@@ -132,10 +166,10 @@
           "lib/net6.0/HotChocolate.Language.Utf8.dll": {}
         }
       },
-      "HotChocolate.Language.Visitors/12.6.2": {
+      "HotChocolate.Language.Visitors/13.0.0-preview.11": {
         "type": "package",
         "dependencies": {
-          "HotChocolate.Language.SyntaxTree": "12.6.2"
+          "HotChocolate.Language.SyntaxTree": "13.0.0-preview.11"
         },
         "compile": {
           "lib/net6.0/HotChocolate.Language.Visitors.dll": {}
@@ -144,10 +178,10 @@
           "lib/net6.0/HotChocolate.Language.Visitors.dll": {}
         }
       },
-      "HotChocolate.Subscriptions/12.6.2": {
+      "HotChocolate.Subscriptions/13.0.0-preview.11": {
         "type": "package",
         "dependencies": {
-          "HotChocolate.Abstractions": "12.6.2",
+          "HotChocolate.Abstractions": "13.0.0-preview.11",
           "Microsoft.Bcl.AsyncInterfaces": "1.1.0"
         },
         "compile": {
@@ -157,11 +191,11 @@
           "lib/net6.0/HotChocolate.Subscriptions.dll": {}
         }
       },
-      "HotChocolate.Subscriptions.InMemory/12.6.2": {
+      "HotChocolate.Subscriptions.InMemory/13.0.0-preview.11": {
         "type": "package",
         "dependencies": {
-          "HotChocolate.Execution": "12.6.2",
-          "HotChocolate.Subscriptions": "12.6.2",
+          "HotChocolate.Execution": "13.0.0-preview.11",
+          "HotChocolate.Subscriptions": "13.0.0-preview.11",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "3.1.4",
           "System.Threading.Channels": "4.7.0"
         },
@@ -172,13 +206,13 @@
           "lib/net6.0/HotChocolate.Subscriptions.InMemory.dll": {}
         }
       },
-      "HotChocolate.Types/12.6.2": {
+      "HotChocolate.Types/13.0.0-preview.11": {
         "type": "package",
         "dependencies": {
-          "HotChocolate.Abstractions": "12.6.2",
-          "HotChocolate.Subscriptions": "12.6.2",
-          "HotChocolate.Utilities": "12.6.2",
-          "HotChocolate.Utilities.Introspection": "12.6.2",
+          "HotChocolate.Abstractions": "13.0.0-preview.11",
+          "HotChocolate.Subscriptions": "13.0.0-preview.11",
+          "HotChocolate.Utilities": "13.0.0-preview.11",
+          "HotChocolate.Utilities.Introspection": "13.0.0-preview.11",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "3.1.4",
           "Microsoft.Extensions.ObjectPool": "3.1.4",
           "System.ComponentModel.Annotations": "4.7.0",
@@ -191,11 +225,11 @@
           "lib/net6.0/HotChocolate.Types.dll": {}
         }
       },
-      "HotChocolate.Types.CursorPagination/12.6.2": {
+      "HotChocolate.Types.CursorPagination/13.0.0-preview.11": {
         "type": "package",
         "dependencies": {
-          "HotChocolate.Execution": "12.6.2",
-          "HotChocolate.Types": "12.6.2"
+          "HotChocolate.Execution": "13.0.0-preview.11",
+          "HotChocolate.Types": "13.0.0-preview.11"
         },
         "compile": {
           "lib/net6.0/HotChocolate.Types.CursorPagination.dll": {}
@@ -204,11 +238,11 @@
           "lib/net6.0/HotChocolate.Types.CursorPagination.dll": {}
         }
       },
-      "HotChocolate.Types.Mutations/12.6.2": {
+      "HotChocolate.Types.Mutations/13.0.0-preview.11": {
         "type": "package",
         "dependencies": {
-          "HotChocolate.Execution": "12.6.2",
-          "HotChocolate.Types": "12.6.2"
+          "HotChocolate.Execution": "13.0.0-preview.11",
+          "HotChocolate.Types": "13.0.0-preview.11"
         },
         "compile": {
           "lib/net6.0/HotChocolate.Types.Mutations.dll": {}
@@ -217,11 +251,11 @@
           "lib/net6.0/HotChocolate.Types.Mutations.dll": {}
         }
       },
-      "HotChocolate.Types.OffsetPagination/12.6.2": {
+      "HotChocolate.Types.OffsetPagination/13.0.0-preview.11": {
         "type": "package",
         "dependencies": {
-          "HotChocolate.Execution": "12.6.2",
-          "HotChocolate.Types": "12.6.2"
+          "HotChocolate.Execution": "13.0.0-preview.11",
+          "HotChocolate.Types": "13.0.0-preview.11"
         },
         "compile": {
           "lib/net6.0/HotChocolate.Types.OffsetPagination.dll": {}
@@ -230,10 +264,10 @@
           "lib/net6.0/HotChocolate.Types.OffsetPagination.dll": {}
         }
       },
-      "HotChocolate.Types.Scalars.Upload/12.6.2": {
+      "HotChocolate.Types.Scalars.Upload/13.0.0-preview.11": {
         "type": "package",
         "dependencies": {
-          "HotChocolate.Types": "12.6.2"
+          "HotChocolate.Types": "13.0.0-preview.11"
         },
         "compile": {
           "lib/net6.0/HotChocolate.Types.Scalars.Upload.dll": {}
@@ -242,7 +276,7 @@
           "lib/net6.0/HotChocolate.Types.Scalars.Upload.dll": {}
         }
       },
-      "HotChocolate.Utilities/12.6.2": {
+      "HotChocolate.Utilities/13.0.0-preview.11": {
         "type": "package",
         "dependencies": {
           "Microsoft.Bcl.AsyncInterfaces": "1.1.0",
@@ -257,10 +291,10 @@
           "lib/net6.0/HotChocolate.Utilities.dll": {}
         }
       },
-      "HotChocolate.Utilities.Introspection/12.6.2": {
+      "HotChocolate.Utilities.Introspection/13.0.0-preview.11": {
         "type": "package",
         "dependencies": {
-          "HotChocolate.Language": "12.6.2",
+          "HotChocolate.Language": "13.0.0-preview.11",
           "System.Text.Json": "4.7.0"
         },
         "compile": {
@@ -270,10 +304,10 @@
           "lib/net6.0/HotChocolate.Utilities.Introspection.dll": {}
         }
       },
-      "HotChocolate.Validation/12.6.2": {
+      "HotChocolate.Validation/13.0.0-preview.11": {
         "type": "package",
         "dependencies": {
-          "HotChocolate.Types": "12.6.2",
+          "HotChocolate.Types": "13.0.0-preview.11",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "3.1.4",
           "Microsoft.Extensions.Options": "3.1.4"
         },
@@ -1898,16 +1932,16 @@
     }
   },
   "libraries": {
-    "GreenDonut/12.6.2": {
-      "sha512": "h2PuYoYKx6om+KLIaH+IcstbBH3HYLNxhO18mExua9B1dzio39KrGZxt5tlqEckSQqcZrAg2n1GIv883ur7DOw==",
+    "GreenDonut/13.0.0-preview.11": {
+      "sha512": "67lqT1orOUmMWpLjyZqeYgzLy7jZfhKMtqS82yypErzcA4Krk1IhbOBt5pJICU2J3GJUdIWg9s3vD8/cFE5Now==",
       "type": "package",
-      "path": "greendonut/12.6.2",
+      "path": "greendonut/13.0.0-preview.11",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE",
         "greendonut-signet.png",
-        "greendonut.12.6.2.nupkg.sha512",
+        "greendonut.13.0.0-preview.11.nupkg.sha512",
         "greendonut.nuspec",
         "hotchocolate-signet.png",
         "lib/net5.0/GreenDonut.dll",
@@ -1921,32 +1955,32 @@
         "strawberryshake-signet.png"
       ]
     },
-    "HotChocolate/12.6.2": {
-      "sha512": "9VLgtczuYWIlEZBsEw8qAY5nGhWsUwKzOITzvQU/4usnRO6x4o0UW5J2VjBkAeSIUVWPDRV6++ntrmU8kXGd0Q==",
+    "HotChocolate/13.0.0-preview.11": {
+      "sha512": "ec7qnvkXaO7PSoryGGlFdJ+9FuOo/rkcxwHucd0++iYFMW+O3qy7UWd56Ad7dMc3LIMRS8xqBC0SVBBsLOeNAA==",
       "type": "package",
-      "path": "hotchocolate/12.6.2",
+      "path": "hotchocolate/13.0.0-preview.11",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE",
         "greendonut-signet.png",
         "hotchocolate-signet.png",
-        "hotchocolate.12.6.2.nupkg.sha512",
+        "hotchocolate.13.0.0-preview.11.nupkg.sha512",
         "hotchocolate.nuspec",
         "strawberryshake-signet.png"
       ]
     },
-    "HotChocolate.Abstractions/12.6.2": {
-      "sha512": "j9MqwWmbA27C0S7P06S55r6L3vftFkFVOvSjPC4aMFoxnymrdCaN1LQw6x0MCdCi625WrQEBisx5OzyX0KufVg==",
+    "HotChocolate.Abstractions/13.0.0-preview.11": {
+      "sha512": "OQ9VT7oC97v32DSCpK0Yj+Z7dH42ypeWoct9Lxf82Oeg6y4jzL0053SDiH0tUZHz7wls1Cnt1VJPDz71diye+A==",
       "type": "package",
-      "path": "hotchocolate.abstractions/12.6.2",
+      "path": "hotchocolate.abstractions/13.0.0-preview.11",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE",
         "greendonut-signet.png",
         "hotchocolate-signet.png",
-        "hotchocolate.abstractions.12.6.2.nupkg.sha512",
+        "hotchocolate.abstractions.13.0.0-preview.11.nupkg.sha512",
         "hotchocolate.abstractions.nuspec",
         "lib/net5.0/HotChocolate.Abstractions.dll",
         "lib/net5.0/HotChocolate.Abstractions.xml",
@@ -1959,10 +1993,10 @@
         "strawberryshake-signet.png"
       ]
     },
-    "HotChocolate.AspNetCore/12.6.2": {
-      "sha512": "NZn+ZfAZNfdWA3G/9EasrHc7FAY9TdojwZCMyWsb2Ltmq9O/ZfTZkd7+cuYvtTDLd6fAZOXjimr33qMEdig4aw==",
+    "HotChocolate.AspNetCore/13.0.0-preview.11": {
+      "sha512": "NTkh65oVfj62qZfU/KjOo8XUaz2C/6s53MJMZYvmaCQtGdyqF5oZllk0vpekTYwa3cTHeNy5yTrDR7FdUZzaOg==",
       "type": "package",
-      "path": "hotchocolate.aspnetcore/12.6.2",
+      "path": "hotchocolate.aspnetcore/13.0.0-preview.11",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1971,7 +2005,7 @@
         "build/HotChocolate.AspNetCore.targets",
         "greendonut-signet.png",
         "hotchocolate-signet.png",
-        "hotchocolate.aspnetcore.12.6.2.nupkg.sha512",
+        "hotchocolate.aspnetcore.13.0.0-preview.11.nupkg.sha512",
         "hotchocolate.aspnetcore.nuspec",
         "lib/net5.0/HotChocolate.AspNetCore.dll",
         "lib/net5.0/HotChocolate.AspNetCore.xml",
@@ -1982,17 +2016,65 @@
         "strawberryshake-signet.png"
       ]
     },
-    "HotChocolate.Execution/12.6.2": {
-      "sha512": "NugZmn8sKH49LqkJMqjyrTd7Bw0ELhzhocb9gMu1i43r5q/l9x9ZmtGB9y6d9n0fIxFRO7daq5lhJZFqkRBdCQ==",
+    "HotChocolate.Data/13.0.0-preview.11": {
+      "sha512": "RsRwulujSMFZuCi46OYCu1//ksJc71NTWJAgwzx9ZitaQQZnobn9JvztY5Raq+YDT2qi8HoVJDCziU3AdkrKLQ==",
       "type": "package",
-      "path": "hotchocolate.execution/12.6.2",
+      "path": "hotchocolate.data/13.0.0-preview.11",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "build/HotChocolate.Data.props",
+        "build/HotChocolate.Data.targets",
+        "greendonut-signet.png",
+        "hotchocolate-signet.png",
+        "hotchocolate.data.13.0.0-preview.11.nupkg.sha512",
+        "hotchocolate.data.nuspec",
+        "lib/net5.0/HotChocolate.Data.dll",
+        "lib/net5.0/HotChocolate.Data.xml",
+        "lib/net6.0/HotChocolate.Data.dll",
+        "lib/net6.0/HotChocolate.Data.xml",
+        "lib/netcoreapp3.1/HotChocolate.Data.dll",
+        "lib/netcoreapp3.1/HotChocolate.Data.xml",
+        "lib/netstandard2.0/HotChocolate.Data.dll",
+        "lib/netstandard2.0/HotChocolate.Data.xml",
+        "strawberryshake-signet.png"
+      ]
+    },
+    "HotChocolate.Data.EntityFramework/13.0.0-preview.11": {
+      "sha512": "D2hWvFR7jgd2wSZzSsTXFxPXdPvwEu8cT0vftoyPwX54RLXtFrIyHigXRoW9JqEcPrI4M1AIIiHW3Ex3mtJceQ==",
+      "type": "package",
+      "path": "hotchocolate.data.entityframework/13.0.0-preview.11",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "build/HotChocolate.Data.EntityFramework.props",
+        "build/HotChocolate.Data.EntityFramework.targets",
+        "greendonut-signet.png",
+        "hotchocolate-signet.png",
+        "hotchocolate.data.entityframework.13.0.0-preview.11.nupkg.sha512",
+        "hotchocolate.data.entityframework.nuspec",
+        "lib/net5.0/HotChocolate.Data.EntityFramework.dll",
+        "lib/net5.0/HotChocolate.Data.EntityFramework.xml",
+        "lib/net6.0/HotChocolate.Data.EntityFramework.dll",
+        "lib/net6.0/HotChocolate.Data.EntityFramework.xml",
+        "lib/netstandard2.1/HotChocolate.Data.EntityFramework.dll",
+        "lib/netstandard2.1/HotChocolate.Data.EntityFramework.xml",
+        "strawberryshake-signet.png"
+      ]
+    },
+    "HotChocolate.Execution/13.0.0-preview.11": {
+      "sha512": "LV3O2gEqo4emUUeqM79iE46iBbWq2HlnMfmi4obeZnswKG1zeFp/KsiCBnqoaSlKUz2j2w+TjVwXx0p1DnXrCg==",
+      "type": "package",
+      "path": "hotchocolate.execution/13.0.0-preview.11",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE",
         "greendonut-signet.png",
         "hotchocolate-signet.png",
-        "hotchocolate.execution.12.6.2.nupkg.sha512",
+        "hotchocolate.execution.13.0.0-preview.11.nupkg.sha512",
         "hotchocolate.execution.nuspec",
         "lib/net5.0/HotChocolate.Execution.dll",
         "lib/net5.0/HotChocolate.Execution.xml",
@@ -2005,17 +2087,17 @@
         "strawberryshake-signet.png"
       ]
     },
-    "HotChocolate.Fetching/12.6.2": {
-      "sha512": "l6Y/bP36v2tN68ZQsPUCkY72USqX+uP6VV8WZ0SXYrRmu/xVQgbtLkNih18vWnaEjgMcPzR7DnhFWlqnEwzdpw==",
+    "HotChocolate.Fetching/13.0.0-preview.11": {
+      "sha512": "/IQCSEz+dAB+ZrdXrhM4uFflUNyZvYWmrqzPH6WehhqK4zUy6qk3kx/wTyitUmnf+NyzHD2VefgXtbeqq3yOdQ==",
       "type": "package",
-      "path": "hotchocolate.fetching/12.6.2",
+      "path": "hotchocolate.fetching/13.0.0-preview.11",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE",
         "greendonut-signet.png",
         "hotchocolate-signet.png",
-        "hotchocolate.fetching.12.6.2.nupkg.sha512",
+        "hotchocolate.fetching.13.0.0-preview.11.nupkg.sha512",
         "hotchocolate.fetching.nuspec",
         "lib/net5.0/HotChocolate.Fetching.dll",
         "lib/net5.0/HotChocolate.Fetching.xml",
@@ -2028,17 +2110,17 @@
         "strawberryshake-signet.png"
       ]
     },
-    "HotChocolate.Language/12.6.2": {
-      "sha512": "eSyQJWyOL8Fu+CrDy1y2KzLg2/Jfy5OZ3Vap5RJ6sqgMhua+HMgWbn3sWg8Imx7yRJ+osdrGKe8ARsJta/9dBw==",
+    "HotChocolate.Language/13.0.0-preview.11": {
+      "sha512": "AtahIPN3lIqpkh3yZZ9wg+eB8+MPbD30Y7YiOPLuvixTcEUQRNWTTpwHZke71oWZ5g+7L+d9SrvFDzT6K767Zg==",
       "type": "package",
-      "path": "hotchocolate.language/12.6.2",
+      "path": "hotchocolate.language/13.0.0-preview.11",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE",
         "greendonut-signet.png",
         "hotchocolate-signet.png",
-        "hotchocolate.language.12.6.2.nupkg.sha512",
+        "hotchocolate.language.13.0.0-preview.11.nupkg.sha512",
         "hotchocolate.language.nuspec",
         "lib/net5.0/HotChocolate.Language.dll",
         "lib/net5.0/HotChocolate.Language.xml",
@@ -2051,17 +2133,17 @@
         "strawberryshake-signet.png"
       ]
     },
-    "HotChocolate.Language.SyntaxTree/12.6.2": {
-      "sha512": "VKzDexaw5gTJaCtTuu8N7ZggKzd2Og3QX4yuLXRc2ZF3uPz8OFOF57c3QoZXMK3eIciTcmdqOY1l2ZlQ/91DUQ==",
+    "HotChocolate.Language.SyntaxTree/13.0.0-preview.11": {
+      "sha512": "9ZRyiLVm/XvnKi7C2inOOsg4dEe8BxWnfIsDjMPOFxQ8153e5JD515IXO2Kp5pL3F1IpWriU75C4L08n/2Tj8A==",
       "type": "package",
-      "path": "hotchocolate.language.syntaxtree/12.6.2",
+      "path": "hotchocolate.language.syntaxtree/13.0.0-preview.11",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE",
         "greendonut-signet.png",
         "hotchocolate-signet.png",
-        "hotchocolate.language.syntaxtree.12.6.2.nupkg.sha512",
+        "hotchocolate.language.syntaxtree.13.0.0-preview.11.nupkg.sha512",
         "hotchocolate.language.syntaxtree.nuspec",
         "lib/net5.0/HotChocolate.Language.SyntaxTree.dll",
         "lib/net5.0/HotChocolate.Language.SyntaxTree.xml",
@@ -2074,17 +2156,17 @@
         "strawberryshake-signet.png"
       ]
     },
-    "HotChocolate.Language.Utf8/12.6.2": {
-      "sha512": "w0UPzmdofsU3c10TkujqPq6Zl+DKn3wkoRw03SZ8wfF+EYJbS6ontgRxPu5y1FzQa6UmY48FcPqeb2zNhimpBA==",
+    "HotChocolate.Language.Utf8/13.0.0-preview.11": {
+      "sha512": "dUD19MPcZE+r1mnyjhK3XInj/IoiR6x2N2zgB14xrJ6f+DL1GB507IMxkzgWpkla3mxquN2GeRwi+ZMEJsog4A==",
       "type": "package",
-      "path": "hotchocolate.language.utf8/12.6.2",
+      "path": "hotchocolate.language.utf8/13.0.0-preview.11",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE",
         "greendonut-signet.png",
         "hotchocolate-signet.png",
-        "hotchocolate.language.utf8.12.6.2.nupkg.sha512",
+        "hotchocolate.language.utf8.13.0.0-preview.11.nupkg.sha512",
         "hotchocolate.language.utf8.nuspec",
         "lib/net5.0/HotChocolate.Language.Utf8.dll",
         "lib/net5.0/HotChocolate.Language.Utf8.xml",
@@ -2097,17 +2179,17 @@
         "strawberryshake-signet.png"
       ]
     },
-    "HotChocolate.Language.Visitors/12.6.2": {
-      "sha512": "i2Df6EIcIvF0Fb2UqkvDaT9R+urw44l308Brdfd2hf/Il3UZ5bNpLn6nY9+t+M+YJSaYVhfumYyPQyYtB8PAUA==",
+    "HotChocolate.Language.Visitors/13.0.0-preview.11": {
+      "sha512": "2A4iWsdduI/vEvBp1irzVHLU0deqT++iH1vvlJmzjELIrX/WN0tzTqcKuo/GoLv13oR73CmXY3Y2IXlIF4bUEw==",
       "type": "package",
-      "path": "hotchocolate.language.visitors/12.6.2",
+      "path": "hotchocolate.language.visitors/13.0.0-preview.11",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE",
         "greendonut-signet.png",
         "hotchocolate-signet.png",
-        "hotchocolate.language.visitors.12.6.2.nupkg.sha512",
+        "hotchocolate.language.visitors.13.0.0-preview.11.nupkg.sha512",
         "hotchocolate.language.visitors.nuspec",
         "lib/net5.0/HotChocolate.Language.Visitors.dll",
         "lib/net5.0/HotChocolate.Language.Visitors.xml",
@@ -2120,17 +2202,17 @@
         "strawberryshake-signet.png"
       ]
     },
-    "HotChocolate.Subscriptions/12.6.2": {
-      "sha512": "MWO0UbOfhwW0lN/dE6DRSbYjMVuKcETF9W1YLMUuhHMFw2rXMAmDIfl71Yhc/KP4NoqqOY5t3FZ1JGRtwWcV/Q==",
+    "HotChocolate.Subscriptions/13.0.0-preview.11": {
+      "sha512": "cvrUQxA4SJEJldaIDySGn8ihJbIiLjhIQw3alMXxencrTaIcBhCy53noTmxXq7r232kbytH/Vu94gT8SkKKkZA==",
       "type": "package",
-      "path": "hotchocolate.subscriptions/12.6.2",
+      "path": "hotchocolate.subscriptions/13.0.0-preview.11",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE",
         "greendonut-signet.png",
         "hotchocolate-signet.png",
-        "hotchocolate.subscriptions.12.6.2.nupkg.sha512",
+        "hotchocolate.subscriptions.13.0.0-preview.11.nupkg.sha512",
         "hotchocolate.subscriptions.nuspec",
         "lib/net5.0/HotChocolate.Subscriptions.dll",
         "lib/net5.0/HotChocolate.Subscriptions.xml",
@@ -2143,17 +2225,17 @@
         "strawberryshake-signet.png"
       ]
     },
-    "HotChocolate.Subscriptions.InMemory/12.6.2": {
-      "sha512": "qcTMNFIamlvwLKI69Gg+XVTilO7xp5pnqiXaQ7QaVIuI4hxeDAmZfn+q8y4EARMGDFxcx/AqYR3gsgCVz4HlXQ==",
+    "HotChocolate.Subscriptions.InMemory/13.0.0-preview.11": {
+      "sha512": "EASOoeXc/08pO+R3lbXH20h4+aQfOsOy15L7zCz73buV4zwaNfw1NgtW1Aw8x9dlL3fKbwF/eLLB6DIHaSeh9w==",
       "type": "package",
-      "path": "hotchocolate.subscriptions.inmemory/12.6.2",
+      "path": "hotchocolate.subscriptions.inmemory/13.0.0-preview.11",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE",
         "greendonut-signet.png",
         "hotchocolate-signet.png",
-        "hotchocolate.subscriptions.inmemory.12.6.2.nupkg.sha512",
+        "hotchocolate.subscriptions.inmemory.13.0.0-preview.11.nupkg.sha512",
         "hotchocolate.subscriptions.inmemory.nuspec",
         "lib/net5.0/HotChocolate.Subscriptions.InMemory.dll",
         "lib/net5.0/HotChocolate.Subscriptions.InMemory.xml",
@@ -2166,17 +2248,17 @@
         "strawberryshake-signet.png"
       ]
     },
-    "HotChocolate.Types/12.6.2": {
-      "sha512": "T2iwXFIq0uxNDyA2eoRJyGIt7gfXEocNRLFffqGOqJG40zolCPxvkgVzFAf1jC5BX3eeWHWCyfUlKQmZdWEoGw==",
+    "HotChocolate.Types/13.0.0-preview.11": {
+      "sha512": "B4TnvfKyrT3sBc0Fc5diNx5DdYRqgt5Y4QSIOZhf0rjlHEpdXMFYhR5pa0tpWV7h6GnfEkY2aBC0fOHntj+fjw==",
       "type": "package",
-      "path": "hotchocolate.types/12.6.2",
+      "path": "hotchocolate.types/13.0.0-preview.11",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE",
         "greendonut-signet.png",
         "hotchocolate-signet.png",
-        "hotchocolate.types.12.6.2.nupkg.sha512",
+        "hotchocolate.types.13.0.0-preview.11.nupkg.sha512",
         "hotchocolate.types.nuspec",
         "lib/net5.0/HotChocolate.Types.dll",
         "lib/net5.0/HotChocolate.Types.xml",
@@ -2189,17 +2271,17 @@
         "strawberryshake-signet.png"
       ]
     },
-    "HotChocolate.Types.CursorPagination/12.6.2": {
-      "sha512": "Zu8iY5loBtBykwIBd832zlDDnwjOGz72Q6Jz1t2YMwvSHBg3c7dcfKHMupPzn6Mql6aOJQFwgi5TR25WH/mzoA==",
+    "HotChocolate.Types.CursorPagination/13.0.0-preview.11": {
+      "sha512": "Fn4WbE2DqhtCyEciBLBo9stdhvdO9MmAbeOitIwas6FmwrITxKC/ZIqKWO7pkEyrZfl+PXsDb7NM/BnVemmY4Q==",
       "type": "package",
-      "path": "hotchocolate.types.cursorpagination/12.6.2",
+      "path": "hotchocolate.types.cursorpagination/13.0.0-preview.11",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE",
         "greendonut-signet.png",
         "hotchocolate-signet.png",
-        "hotchocolate.types.cursorpagination.12.6.2.nupkg.sha512",
+        "hotchocolate.types.cursorpagination.13.0.0-preview.11.nupkg.sha512",
         "hotchocolate.types.cursorpagination.nuspec",
         "lib/net5.0/HotChocolate.Types.CursorPagination.dll",
         "lib/net5.0/HotChocolate.Types.CursorPagination.xml",
@@ -2212,17 +2294,17 @@
         "strawberryshake-signet.png"
       ]
     },
-    "HotChocolate.Types.Mutations/12.6.2": {
-      "sha512": "hENEz8b6J9khW75RCgmp0pKFh++6jhlrA8AjisgUdsDRag8gp2KmGb4RpqjsHKmmVZRe50BrxYy4zrPsBfvBEA==",
+    "HotChocolate.Types.Mutations/13.0.0-preview.11": {
+      "sha512": "Q1/BzDApwUUGPFhGaomL2TyldmfxQH1fW/pJ3ZDbMTnSNtMBlR29bjv1PLmFD21ADdGZbD/djPnIaU/a7UViig==",
       "type": "package",
-      "path": "hotchocolate.types.mutations/12.6.2",
+      "path": "hotchocolate.types.mutations/13.0.0-preview.11",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE",
         "greendonut-signet.png",
         "hotchocolate-signet.png",
-        "hotchocolate.types.mutations.12.6.2.nupkg.sha512",
+        "hotchocolate.types.mutations.13.0.0-preview.11.nupkg.sha512",
         "hotchocolate.types.mutations.nuspec",
         "lib/net5.0/HotChocolate.Types.Mutations.dll",
         "lib/net5.0/HotChocolate.Types.Mutations.xml",
@@ -2235,17 +2317,17 @@
         "strawberryshake-signet.png"
       ]
     },
-    "HotChocolate.Types.OffsetPagination/12.6.2": {
-      "sha512": "CLLwrnzLQFy/dwGBrU3FxR9pkujhPrPb9PlKt4joCvzNgEfdVlLuqzRV4JNyGZ7rLWxrK5d8jrBdBQbjxUbhgA==",
+    "HotChocolate.Types.OffsetPagination/13.0.0-preview.11": {
+      "sha512": "KgL5v4xri78vaNNBgXyO7OSYlqeSKQjiZJav5gVaIfDwP73s7au2fEU7MYX33igaH85s0gW1+TDrk4G3Iaegsg==",
       "type": "package",
-      "path": "hotchocolate.types.offsetpagination/12.6.2",
+      "path": "hotchocolate.types.offsetpagination/13.0.0-preview.11",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE",
         "greendonut-signet.png",
         "hotchocolate-signet.png",
-        "hotchocolate.types.offsetpagination.12.6.2.nupkg.sha512",
+        "hotchocolate.types.offsetpagination.13.0.0-preview.11.nupkg.sha512",
         "hotchocolate.types.offsetpagination.nuspec",
         "lib/net5.0/HotChocolate.Types.OffsetPagination.dll",
         "lib/net5.0/HotChocolate.Types.OffsetPagination.xml",
@@ -2258,17 +2340,17 @@
         "strawberryshake-signet.png"
       ]
     },
-    "HotChocolate.Types.Scalars.Upload/12.6.2": {
-      "sha512": "LeF8skYsFbZ6d5HySZpcAs6xMf23FnbRVUluFkO/XTj2UxqS0HfGL+xHxUB5dID/PCoSCMcg/TBqxLRHjIS40w==",
+    "HotChocolate.Types.Scalars.Upload/13.0.0-preview.11": {
+      "sha512": "ErFL+wD2dKBCOlGSZ40v2rjSfSjIFxElnwvn5+xyX7RS5cR+WChkM2KTHbTbKClIV9g+anShy3FN/qeBXKdJwA==",
       "type": "package",
-      "path": "hotchocolate.types.scalars.upload/12.6.2",
+      "path": "hotchocolate.types.scalars.upload/13.0.0-preview.11",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE",
         "greendonut-signet.png",
         "hotchocolate-signet.png",
-        "hotchocolate.types.scalars.upload.12.6.2.nupkg.sha512",
+        "hotchocolate.types.scalars.upload.13.0.0-preview.11.nupkg.sha512",
         "hotchocolate.types.scalars.upload.nuspec",
         "lib/net5.0/HotChocolate.Types.Scalars.Upload.dll",
         "lib/net5.0/HotChocolate.Types.Scalars.Upload.xml",
@@ -2281,17 +2363,17 @@
         "strawberryshake-signet.png"
       ]
     },
-    "HotChocolate.Utilities/12.6.2": {
-      "sha512": "6awFuIJG3dCC1BysaiOsj1A+bavzdVxR1LiSP7ZTtbXFehx84iJFC8DbY/BggxzuWZf1G1RGW5Nly7ZvTKMMZw==",
+    "HotChocolate.Utilities/13.0.0-preview.11": {
+      "sha512": "6sSRh5ZIxeTXOFBqSJnsavamBq8q5wGuqAETsFk0DefcOPWXRci0Jp4f7qEvvcbv4pQfEL4AJlwA9+ZDFDJ8ZA==",
       "type": "package",
-      "path": "hotchocolate.utilities/12.6.2",
+      "path": "hotchocolate.utilities/13.0.0-preview.11",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE",
         "greendonut-signet.png",
         "hotchocolate-signet.png",
-        "hotchocolate.utilities.12.6.2.nupkg.sha512",
+        "hotchocolate.utilities.13.0.0-preview.11.nupkg.sha512",
         "hotchocolate.utilities.nuspec",
         "lib/net5.0/HotChocolate.Utilities.dll",
         "lib/net5.0/HotChocolate.Utilities.xml",
@@ -2304,17 +2386,17 @@
         "strawberryshake-signet.png"
       ]
     },
-    "HotChocolate.Utilities.Introspection/12.6.2": {
-      "sha512": "sGAcnfd5/CqMKesaQ5PYtCIJQV2czkGGsJSmYL07vPSyGvNEhA5rYNHdmY+aTWoVzyUfh/3C2PZhghW5AotK6A==",
+    "HotChocolate.Utilities.Introspection/13.0.0-preview.11": {
+      "sha512": "1hJYSCnUwvpNOTV+wwwWTs4PZTu8mfN2TyiOwOJG+hMVgEddqhDPvOfSD4mLAqZR4/1Sx5/MvCY1xDPw4BpkaQ==",
       "type": "package",
-      "path": "hotchocolate.utilities.introspection/12.6.2",
+      "path": "hotchocolate.utilities.introspection/13.0.0-preview.11",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE",
         "greendonut-signet.png",
         "hotchocolate-signet.png",
-        "hotchocolate.utilities.introspection.12.6.2.nupkg.sha512",
+        "hotchocolate.utilities.introspection.13.0.0-preview.11.nupkg.sha512",
         "hotchocolate.utilities.introspection.nuspec",
         "lib/net5.0/HotChocolate.Utilities.Introspection.dll",
         "lib/net5.0/HotChocolate.Utilities.Introspection.xml",
@@ -2327,17 +2409,17 @@
         "strawberryshake-signet.png"
       ]
     },
-    "HotChocolate.Validation/12.6.2": {
-      "sha512": "gpmhrUlP5howdQK8+0RlMVQ3GO4KBlxZhMx+xf8Gu/eNLoic+JycaPCpTODxT1V0P1QztabZSqNZcZnIO3PILw==",
+    "HotChocolate.Validation/13.0.0-preview.11": {
+      "sha512": "fYAslC22ui2QM5MeADazBbgo5PN5SA3BlSQ6FaSaUD3G48+jifuyBKpHyIMHb2I8HDbmCoXcLWoxGcux/kO45g==",
       "type": "package",
-      "path": "hotchocolate.validation/12.6.2",
+      "path": "hotchocolate.validation/13.0.0-preview.11",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE",
         "greendonut-signet.png",
         "hotchocolate-signet.png",
-        "hotchocolate.validation.12.6.2.nupkg.sha512",
+        "hotchocolate.validation.13.0.0-preview.11.nupkg.sha512",
         "hotchocolate.validation.nuspec",
         "lib/net5.0/HotChocolate.Validation.dll",
         "lib/net5.0/HotChocolate.Validation.xml",
@@ -6438,7 +6520,8 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "HotChocolate.AspNetCore >= 12.6.2",
+      "HotChocolate.AspNetCore >= 13.0.0-preview.11",
+      "HotChocolate.Data.EntityFramework >= 13.0.0-preview.11",
       "Microsoft.EntityFrameworkCore.Design >= 6.0.2",
       "NpgSql.EntityFrameworkCore.PostgreSQL.Design >= 1.1.0",
       "Npgsql.EntityFrameworkCore.PostgreSQL >= 6.0.3",
@@ -6451,11 +6534,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Will\\Desktop\\ToDo\\ToDo\\ToDo.csproj",
+      "projectUniqueName": "c:\\Users\\Will\\Desktop\\ToDo\\ToDo\\ToDo.csproj",
       "projectName": "ToDo",
-      "projectPath": "C:\\Users\\Will\\Desktop\\ToDo\\ToDo\\ToDo.csproj",
+      "projectPath": "c:\\Users\\Will\\Desktop\\ToDo\\ToDo\\ToDo.csproj",
       "packagesPath": "C:\\Users\\Will\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Will\\Desktop\\ToDo\\ToDo\\obj\\",
+      "outputPath": "c:\\Users\\Will\\Desktop\\ToDo\\ToDo\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Will\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -6486,7 +6569,11 @@
         "dependencies": {
           "HotChocolate.AspNetCore": {
             "target": "Package",
-            "version": "[12.6.2, )"
+            "version": "[13.0.0-preview.11, )"
+          },
+          "HotChocolate.Data.EntityFramework": {
+            "target": "Package",
+            "version": "[13.0.0-preview.11, )"
           },
           "Microsoft.EntityFrameworkCore.Design": {
             "target": "Package",
