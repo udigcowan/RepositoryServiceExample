@@ -8,16 +8,18 @@ namespace ToDo.Repositories;
 [ApiController]
 [Route("[repository]")]
 
+        
 
     public class Repository: IToDoRepository<ToDoItem, int>
     {
+        
         private readonly ToDoContext context;
         public Repository(ToDoContext context)=>this.context=context;
 
         [HttpDelete("{id}")]
         public async Task Delete(int id)
         {
-           var item =await context.ToDoItems.FirstOrDefaultAsync(b=>b.ID==id);
+           var item =await context.ToDoItem.FirstOrDefaultAsync(b=>b.ID==id);
            if(item !=null) {
                context.Remove(item);
            }
@@ -25,7 +27,7 @@ namespace ToDo.Repositories;
         [HttpGet]       
         public async Task<IEnumerable<ToDoItem>> GetAll()
         {
-            return await context.ToDoItems.Include(b=>b.Name)
+            return await context.ToDoItem.Include(b=>b.Name)
                                           .Include(b=>b.IsComplete)
                                           .ToListAsync();  
         }
@@ -33,13 +35,13 @@ namespace ToDo.Repositories;
         [HttpGet("{id}")]
         public async Task<ToDoItem> GetByID(int id)
         {
-            return await context.ToDoItems.FindAsync(id);
+            return await context.ToDoItem.FindAsync(id);
         }
 
         [HttpPost]
         public async Task<ToDoItem> Insert(ToDoItem entity)
         {
-           await context.ToDoItems.AddAsync(entity);
+           await context.ToDoItem.AddAsync(entity);
            return entity;
         }
 

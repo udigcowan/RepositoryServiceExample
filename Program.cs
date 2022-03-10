@@ -1,5 +1,9 @@
 using Microsoft.EntityFrameworkCore;
 using ToDo.Data;
+using ToDo.Repositories;
+using ToDo.Services;
+using System.Collections.Generic;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,10 +14,12 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+
 //services to build postgres database
 builder.Services.AddDbContext<ToDoContext>(
     o=>o.UseNpgsql(builder.Configuration.GetConnectionString("ToDoDB"))
 );
+builder.Services.AddGraphQLServer().AddQueryType<GraphQLQuery>().AddFiltering().AddSorting().AddProjections();
 
 
 var app = builder.Build();
@@ -30,5 +36,7 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 
 app.MapControllers();
+
+app.MapGraphQL("/graphql");
 
 app.Run();
