@@ -7,7 +7,7 @@ using System;
 
 namespace ToDoQuery.Data{
 
-    public class GraphQLQuery {
+    public class PracticeQuery {
         [UseProjection]
         [UseFiltering]
         [UseSorting]

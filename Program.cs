@@ -3,6 +3,8 @@ using ToDo.Data;
 using ToDo.Repositories;
 using ToDo.Services;
 using System.Collections.Generic;
+using HotChocolate;
+
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -19,7 +21,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<ToDoContext>(
     o=>o.UseNpgsql(builder.Configuration.GetConnectionString("ToDoDB"))
 );
-builder.Services.AddGraphQLServer().AddQueryType<GraphQLQuery>().AddFiltering().AddSorting().AddProjections();
+builder.Services.AddGraphQLServer().AddQueryType<PracticeQuery>().AddFiltering().AddSorting().AddProjections();
 
 
 var app = builder.Build();
